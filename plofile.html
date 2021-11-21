@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plofile</title>
+    <link rel="stylesheet" href="plofile.css">
+</head>
+
+<body>
+
+    <!-- ヘッダーーーーーーーーーーーーーーーーーーーーーーー -->
+
+    <div class="header-container">
+        <div class="header-logo"><a href="index.html">
+            <h1 class="logo">Artist Name</h1>
+            </a>
+        </div>
+    </div>
+        <div class="sns-container">
+            <div class="sns-list">
+                <ul>
+                    <li><a href="#"><img src="images/fa.png" alt="#"></a></li>
+                    <li><a href="#"><img src="images/in.png" alt="#"></a></li>
+                    <li><a href="#"><img src="images/line.png" alt="#"></a></li>
+                    <li><a href="#"><img src="images/tt.png" alt="#"></a></li>
+                    <li><a href="#"><img src="images/you.png" alt="#"></a></li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- ハンバーガーーーーーーーーーーーーーーーーーーー -->
+
+    <div id="nav-toggle">
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="gloval-nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Infomation</a></li>
+                <li><a href="plofile.html">Plofile</a></li>
+                <li><a href="disco.html">Discography</a></li>
+            </ul>
+        </nav>
+    </div>
+
+<!-- ヘッダーここまで -->
+
+<div class="plofile-container">
+    <div class="plofile-logo"><a href="plofile.html"><p>PLOFILE</p></a></div>
+    <div class="plofile-main">
+        <div class="plofile-img">
+            <img src="images/plofile.jpg" alt="#">
+        </div>
+        <div class="plofile-text">
+            <p class="name">Artist Name<span> / Artist Name</span></p><br>
+            <p>生年月日 : 2021年01月01日</p>
+            <p>血液型 : A型</p>
+            <p>星座 : 蟹座</p>
+            <p>身長 : 180cm</p>
+        </div>
+    </div>
+</div>
+
+<!-- ここまで -->
+
+<div class="footer-container">
+    <div class="footer-logo">
+        <img src="images/ArtistName.png" alt="#">
+    </div>
+    <div class="sns-con">
+        <div class="sns-list">
+            <ul>
+                <li><a href="#"><img src="images/fa.png" alt="#"></a></li>
+                <li><a href="#"><img src="images/in.png" alt="#"></a></li>
+                <li><a href="#"><img src="images/line.png" alt="#"></a></li>
+                <li><a href="#"><img src="images/tt.png" alt="#"></a></li>
+                <li><a href="#"><img src="images/you.png" alt="#"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-kp">
+        <div class="kp"><img src="images/bna.png" alt="#"></div>
+        <div class="kp"><img src="images/fun.png" alt="#"></div>
+    </div>
+    <div class="copy-right">
+        <p>このホームページに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製、転載することを禁じます。</p>
+            <p>@ochiai</p>
+    </div>
+</div>
+
+<!-- ---------------------------------jq-------------------------------- -->
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        (function ($) {
+            $(function () {
+                $('#nav-toggle').on('click', function () {
+                    $('body').toggleClass('open');
+                });
+            });
+        })(jQuery);
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
